@@ -88,8 +88,6 @@ csx
 # Windows Store app package directory
 AppPackages/
 
-#忽略node.js的node_modules
-node_modules/
 
 # Others
 [Bb]in
