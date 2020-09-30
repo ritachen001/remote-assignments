@@ -1,0 +1,43 @@
+<!-- appworks mission - Assignment 3: Connect to Backend API by AJAX -->
+
+
+<html>
+    <head>
+        <title>
+            Week3 - Assignment 3
+        </title>
+        <script src='app.js'>
+            let ajax = new XMLHttpRequest();   //1. create an XMLHTTP request object.
+            ajax.open('GET', 'http://localhost:3000/getData?number=66');    //3. open the request.
+
+            ajax.onreadystatechange = function() {      //2. create a callback function.
+                if (ajax.readyState === 4) {
+                document.getElementById('footer').innerHTML = ajax.responseText;   
+                }
+            };
+
+            function sendAJAXX(){ 
+            ajax.send();    //4. send the request.
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>計算加總和</h1>
+        
+        <div id = "footer">
+            <p>請輸入數字：</p>
+            <form action="http://localhost:3000/getData?" method="get">
+                <input type="text" name="number" ><br>
+                <input type="submit" value="提交">
+            </form>
+            
+
+        </div>
+
+        <!-- <button id = "load" onclick ="inputdata()">ENTER</button> -->
+
+
+    </body>
+
+</html>    
