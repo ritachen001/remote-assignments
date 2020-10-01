@@ -1,0 +1,17 @@
+h1{
+  color: rgba(0,0,0,0.6); 
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h3{
+  color:red;
+  text-shadow: 3px 3px 0px rgba(170,94,247,0.3);
+  border: solid 1px ;
+  text-align: center;
+}
+
+p{
+  color:blue;
+  text-align: center;
+}
